@@ -43,7 +43,7 @@ driver = webdriver.Chrome(service = service)
 #driver =webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
 
 #driver.get("https://www.e2open.com/about")
-driver.get("https://orange.e2open.com/ORANGE_na/e2na/console/web/main.action")
+driver.get("https://xxxxx")
 driver.maximize_window()
 
 wait = WebDriverWait(driver, 8)
@@ -71,10 +71,10 @@ cookie.click()
 
 ##################################
 username = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@name='username']")))
-username.send_keys('fabrice.francois@orange.com') # <-----------------------
+username.send_keys('xxx') # <-----------------------
 
 password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@name='password']")))
-password.send_keys('Thursday@123*-') #<------------------
+password.send_keys('xx') #<------------------
 ##################################
 
 submit = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@name = 'submit']")))
